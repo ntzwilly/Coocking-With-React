@@ -1,21 +1,35 @@
-import React, { useContext } from 'react';
-import { RecipeContext } from './App';
+import React, { useContext } from "react";
+import { RecipeContext } from "./App";
 
 const RecipeIngredientEdit = (props) => {
-    
-    const { ingredient, handleIngredientChange, handleIngredientDelete} = props
+  const { ingredient, handleIngredientChange, handleIngredientDelete } = props;
 
-    function handleChange(changes) {
-        handleIngredientChange(ingredient.id, { ...ingredient, ...changes })
-    }
+  function handleChange(changes) {
+    handleIngredientChange(ingredient.id, { ...ingredient, ...changes });
+  }
 
-    return (
-        <>
-            <input className='recipe-edit__input' type='text' value={ingredient.name} onInput={(e) => handleChange({name: e.target.value})} />
-            <input className='recipe-edit__input' type='text' value={ingredient.amount} onInput={(e) => handleChange({amount: e.target.value})} />
-            <button className='btn btn--danger' onClick={() => handleIngredientDelete(ingredient.id)}>&times;</button>
-        </>
-    );
+  return (
+    <>
+      <input
+        className="recipe-edit__input"
+        type="text"
+        value={ingredient.name}
+        onInput={(e) => handleChange({ name: e.target.value })}
+      />
+      <input
+        className="recipe-edit__input"
+        type="text"
+        value={ingredient.amount}
+        onInput={(e) => handleChange({ amount: e.target.value })}
+      />
+      <button
+        className="btn btn--danger"
+        onClick={() => handleIngredientDelete(ingredient.id)}
+      >
+        &times;
+      </button>
+    </>
+  );
 };
 
 export default RecipeIngredientEdit;

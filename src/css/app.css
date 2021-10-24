@@ -1,12 +1,15 @@
 @import-normalize;
-@import 'font.css';
-@import 'recipe-list.css';
-@import 'buttons.css';
-@import 'recipe.css';
-@import 'ingredient-list.css';
-@import 'recipe-edit.css';
+@import "font.css";
+@import "recipe-list.css";
+@import "buttons.css";
+@import "recipe.css";
+@import "ingredient-list.css";
+@import "recipe-edit.css";
 
-*, *,::before, *::after {
+*,
+*,
+::before,
+*::after {
   font-family: Gothan Rounded, sans-serif;
   box-sizing: border-box;
 }
