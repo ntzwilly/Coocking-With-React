@@ -10,10 +10,6 @@ This react app allows to create recipes. You can Add new recipe, Edit existing r
 - React
 - JSX
 - CSS
-
-## Live Demo
-
-- [Netlify Link](https://optimistic-khorana-380f7a.netlify.app/)
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
