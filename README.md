@@ -3,7 +3,7 @@
 
 ![cookwithreact](https://user-images.githubusercontent.com/9049260/139598903-7a235de0-2145-41fb-b18f-d776273a8727.png)
 
-This react app allows to create recipes. You can Add new recipe, Edit existing recipe and delete a recipe.
+This is a react app that allows to create recipes. You can Add new recipe, Edit existing recipe and delete a recipe.
 
 ## Built With
 
